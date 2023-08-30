@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg9833"
+   width="327.07581"
+   height="327.07581"
+   viewBox="0 0 327.07581 327.07581"
+   sodipodi:docname="barameg_logo_colored.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview196"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <metadata
+     id="metadata9839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9837" />
+  <circle
+     r="163.5379"
+     cy="163.5379"
+     cx="163.5379"
+     id="path1386"
+     style="fill:#e81a5b;fill-opacity:0;stroke:none;stroke-width:5.97791;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+  <g
+     id="g1393"
+     transform="translate(416.87264,-32.610118)">
+    <circle
+       r="72.711861"
+       cy="196.98305"
+       cx="-252.50847"
+       id="path10444"
+       style="fill:none;fill-opacity:0.909091;stroke:#ffffff;stroke-width:25;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10454"
+       d="m -325.25179,101.95534 c 0,90.55933 0,91.22034 0,91.22034"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10454-3"
+       d="m -179.91684,194.22656 c 0,90.55933 0,91.22034 0,91.22034"
+       style="fill:#000000;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10562"
+       d="m -372.6483,217.30932 c 4.45288,32.72229 23.37012,63.20857 50.71307,81.72721 27.34295,18.51863 62.67238,24.77214 94.71066,16.76431 2.79606,-0.69886 5.56648,-1.50029 8.30382,-2.40212"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10562-7"
+       d="m -134.02118,174.98669 c -4.45292,-32.72228 -23.37016,-63.20853 -50.7131,-81.727158 -27.34294,-18.518627 -62.67235,-24.772148 -94.71063,-16.764359 -2.79606,0.698859 -5.56648,1.50028 -8.30382,2.40211"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
