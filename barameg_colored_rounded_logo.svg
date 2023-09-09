@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg9833"
+   width="1598.4878"
+   height="327.07581"
+   viewBox="0 0 1598.4878 327.07581"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata9839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9837" />
+  <circle
+     r="163.5379"
+     cy="163.5379"
+     cx="163.5379"
+     id="path1386"
+     style="fill:#e81a5b;fill-opacity:1;stroke:none;stroke-width:5.97791;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+  <g
+     id="g1393"
+     transform="translate(416.87264,-32.610118)">
+    <circle
+       r="72.711861"
+       cy="196.98305"
+       cx="-252.50847"
+       id="path10444"
+       style="fill:none;fill-opacity:0.909091;stroke:#ffffff;stroke-width:25;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10454"
+       d="m -325.25179,101.95534 c 0,90.55933 0,91.22034 0,91.22034"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10454-3"
+       d="m -179.91684,194.22656 c 0,90.55933 0,91.22034 0,91.22034"
+       style="fill:#000000;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10562"
+       d="m -372.6483,217.30932 c 4.45288,32.72229 23.37012,63.20857 50.71307,81.72721 27.34295,18.51863 62.67238,24.77214 94.71066,16.76431 2.79606,-0.69886 5.56648,-1.50029 8.30382,-2.40212"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path10562-7"
+       d="m -134.02118,174.98669 c -4.45292,-32.72228 -23.37016,-63.20853 -50.7131,-81.727158 -27.34294,-18.518627 -62.67235,-24.772148 -94.71063,-16.764359 -2.79606,0.698859 -5.56648,1.50028 -8.30382,2.40211"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     id="g10404"
+     transform="matrix(1.4313925,0,0,1.4313925,413.49484,-106.6188)"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+    <text
+       id="text1450"
+       y="247.48341"
+       x="-20.796097"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.86563;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:abeatbyKai;-inkscape-font-specification:abeatbyKai;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.86563;stroke-linecap:square;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+         y="247.48341"
+         x="-20.796097"
+         id="tspan1448">barameg</tspan></text>
+  </g>
+</svg>
