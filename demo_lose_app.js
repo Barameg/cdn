@@ -86,6 +86,7 @@ function getRouteDataResult(result) {
 
 function handleWebsocketEnhancedSearchAutocompleteResult(result) {
     console.log(result)
+    console.log('calling response')
     window.ws.send(JSON.stringify({
         event: 'response',
         method: 'enahncedSearchAutocomplete',
@@ -191,6 +192,7 @@ function onWebsocketMessage(event) {
         });
     }
     if (data.event && data.event == 'query' && data.method && data.method == 'enhancedSearchAutocomplete') {
+        console.log("==================== calling")
         return new Promise(function (resolve, reject) {
             Android.enhancedSearchAutocomplete(
                 data.client_id,
