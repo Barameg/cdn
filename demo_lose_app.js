@@ -154,6 +154,11 @@ function connect() {
 function onWebsocketOpen(event) {
     console.log('websocket opened')
     console.log(event)
+    window.ws.send(JSON.stringify({
+        event:'subscribe',
+        source: 'mobileClient',
+        id: window.emailAddress
+    }))
 }
 function onWebsocketMessage(event) {
     const data = JSON.parse(event.data);
@@ -252,45 +257,26 @@ function onWebsocketError(event) {
 (async () => {
     window.ws = null
     window.wsTimeout = null
-    localStorage.userIdentifier = 'admin@yourcompany.example.com'
-    
+
     document.addEventListener('input', function (event) {
-        if (event.target.matches('#originInput')) {
-            var language = "en";
-            var country = "us";
-            var query = event.target.value;
-            originSearchAutocomplete(language, country, query)
-        }
-        if (event.target.matches('#destinationInput')) {
-            var language = "en";
-            var country = "us";
-            var query = event.target.value;
-            destinationSearchAutocomplete(language, country, query)
-        }
+
 
     })
     document.addEventListener('click', async function (event) {
-        if (event.target.matches('.originSuggestion')) {
-            window.originAddress = event.target.textContent
-            getOriginCoordinates('en', 'us', event.target.textContent)
-            let originSuggestionsWrapper = document.querySelector('#originSuggestionsWrapper')
-            originSuggestionsWrapper.textContent = ''
-        }
-        if (event.target.matches('.destinationSuggestion')) {
-            window.destinationAddress = event.target.textContent
-            getDestinationCoordinates('en', 'us', event.target.textContent)
-            let destinationSuggestionsWrapper = document.querySelector('#destinationSuggestionsWrapper')
-            destinationSuggestionsWrapper.textContent = ''
-        }
-        if (event.target.matches('#getRoute')) {
-            getRouteData(
-                window.originCoordinates.latitude,
-                window.originCoordinates.longitude,
-                window.destinationCoordinates.latitude,
-                window.destinationCoordinates.longitude
-            )
-        }
+        if (event.target.matches('#connect')) {
+            let emailAddress = document.querySelector('#emailAddress')
+            if(
+                emailAddress.value == ''
+            ){
 
+            } else {
+                window.emailAddress = emailAddress.value
+                connect()
+            }
+        }
+        if (event.target.matches('#disconnect')) {
+
+        }
     })
 })()
 
