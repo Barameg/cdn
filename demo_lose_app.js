@@ -180,7 +180,7 @@ function onWebsocketMessage(event) {
 
     if (data.event && data.event == 'query' && data.method && data.method == 'searchAutocomplete') {
         return new Promise(function (resolve, reject) {
-            Android.socketSearchAutocomplete(
+            Android.searchAutocomplete(
                 data.client_id,
                 data.client_key,
                 data.language,
@@ -192,7 +192,7 @@ function onWebsocketMessage(event) {
     }
     if (data.event && data.event == 'query' && data.method && data.method == 'enhancedSearchAutocomplete') {
         return new Promise(function (resolve, reject) {
-            Android.socketSearchAutocomplete(
+            Android.enhancedSearchAutocomplete(
                 data.client_id,
                 data.client_key,
                 data.language,
@@ -204,7 +204,7 @@ function onWebsocketMessage(event) {
     }
     if (data.event && data.event == 'query' && data.method && data.method == 'forwardGeocoding') {
         return new Promise(function (resolve, reject) {
-            Android.socketReverseGeocoding(
+            Android.forwardGeocoding(
                 data.client_id,
                 data.client_key,
                 data.language,
@@ -217,7 +217,7 @@ function onWebsocketMessage(event) {
     }
     if (data.event && data.event == 'query' && data.method && data.method == 'reverseGeocoding') {
         return new Promise(function (resolve, reject) {
-            Android.socketReverseGeocoding(
+            Android.reverseGeocoding(
                 data.client_id,
                 data.client_key,
                 data.language,
@@ -230,7 +230,7 @@ function onWebsocketMessage(event) {
     }
     if (data.event && data.event == 'query' && data.method && data.method == 'routes') {
         return new Promise(function (resolve, reject) {
-            Android.socketReverseGeocoding(
+            Android.routes(
                 data.client_id,
                 data.client_key,
                 data.origin_latitude,
