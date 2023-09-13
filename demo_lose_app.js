@@ -89,7 +89,7 @@ function handleWebsocketEnhancedSearchAutocompleteResult(result) {
     socket.send(JSON.stringify({
         event: 'response',
         method: 'enahncedSearchAutocomplete',
-        id: localStorage.userIdentifier,
+        id: window.emailAddress,
         result: result
     }))
 }
@@ -99,7 +99,7 @@ function handleWebsocketSearchAutocompleteResult(result) {
     socket.send(JSON.stringify({
         event: 'response',
         method: 'searchAutocomplete',
-        id: localStorage.userIdentifier,
+        id: window.emailAddress,
         result: result
     }))
 }
@@ -109,7 +109,7 @@ function handleWebsocketReverseGeocodingResult(result) {
     socket.send(JSON.stringify({
         event: 'response',
         method: 'reverseGeocoding',
-        id: localStorage.userIdentifier,
+        id: window.emailAddress,
         result: result
     }))
 }
@@ -119,7 +119,7 @@ function handleWebsocketForwardGeocodingResult(result) {
     socket.send(JSON.stringify({
         event: 'response',
         method: 'forwardGeocoding',
-        id: localStorage.userIdentifier,
+        id: window.emailAddress,
         result: result
     }))
 }
@@ -129,7 +129,7 @@ function handleWebsocketRoutesResult(result) {
     socket.send(JSON.stringify({
         event: 'response',
         method: 'routes',
-        id: localStorage.userIdentifier,
+        id: window.emailAddress,
         result: result
     }))
 }
@@ -268,7 +268,7 @@ function onWebsocketError(event) {
             if(
                 emailAddress.value == ''
             ){
-
+                showToast('Email address is empty')
             } else {
                 window.emailAddress = emailAddress.value
                 connect()
