@@ -242,9 +242,10 @@ function onWebsocketMessage(event) {
 function onWebsocketClose(event) {
     console.log('websocket closed')
     clearTimeout(window.wsTimeout)
-    window.wsTimeout = setTimeout(() => {
-        connect()
-    }, 2000)
+    let connected = document.querySelector('#connected')
+    let disconnected = document.querySelector('#disconnected')
+    connected.classList.add('hidden')
+    disconnected.classList.remove('hidden')
 }
 function onWebsocketError(event) {
     console.log('websocket errored')
@@ -275,7 +276,7 @@ function onWebsocketError(event) {
             }
         }
         if (event.target.matches('#disconnect')) {
-
+            window.ws.close()
         }
     })
 })()
