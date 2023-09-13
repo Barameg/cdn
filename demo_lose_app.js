@@ -154,6 +154,10 @@ function connect() {
 function onWebsocketOpen(event) {
     console.log('websocket opened')
     console.log(event)
+    let connected = document.querySelector('#connected')
+    let disconnected = document.querySelector('#disconnected')
+    disconnected.classList.add('hidden')
+    connected.classList.remove('hidden')
     window.ws.send(JSON.stringify({
         event:'subscribe',
         source: 'mobileClient',
