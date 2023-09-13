@@ -135,9 +135,6 @@ function handleWebsocketRoutesResult(result) {
 }
 
 
-window.ws = null
-window.wsTimeout = null
-localStorage.userIdentifier = 'admin@yourcompany.example.com'
 function connect() {
     const url = 'wss://locationservices.barameg.co/echo'
     window.ws = new WebSocket(url)
@@ -253,7 +250,10 @@ function onWebsocketError(event) {
 }
 
 (async () => {
-
+    window.ws = null
+    window.wsTimeout = null
+    localStorage.userIdentifier = 'admin@yourcompany.example.com'
+    
     document.addEventListener('input', function (event) {
         if (event.target.matches('#originInput')) {
             var language = "en";
