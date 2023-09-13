@@ -86,7 +86,7 @@ function getRouteDataResult(result) {
 
 function handleWebsocketEnhancedSearchAutocompleteResult(result) {
     console.log(result)
-    socket.send(JSON.stringify({
+    window.ws.send(JSON.stringify({
         event: 'response',
         method: 'enahncedSearchAutocomplete',
         id: window.emailAddress,
@@ -96,7 +96,7 @@ function handleWebsocketEnhancedSearchAutocompleteResult(result) {
 
 function handleWebsocketSearchAutocompleteResult(result) {
     console.log(result)
-    socket.send(JSON.stringify({
+    window.ws.send(JSON.stringify({
         event: 'response',
         method: 'searchAutocomplete',
         id: window.emailAddress,
@@ -106,7 +106,7 @@ function handleWebsocketSearchAutocompleteResult(result) {
 
 function handleWebsocketReverseGeocodingResult(result) {
     console.log(result)
-    socket.send(JSON.stringify({
+    window.ws.send(JSON.stringify({
         event: 'response',
         method: 'reverseGeocoding',
         id: window.emailAddress,
@@ -116,7 +116,7 @@ function handleWebsocketReverseGeocodingResult(result) {
 
 function handleWebsocketForwardGeocodingResult(result) {
     console.log(result)
-    socket.send(JSON.stringify({
+    window.ws.send(JSON.stringify({
         event: 'response',
         method: 'forwardGeocoding',
         id: window.emailAddress,
@@ -126,7 +126,7 @@ function handleWebsocketForwardGeocodingResult(result) {
 
 function handleWebsocketRoutesResult(result) {
     console.log(result)
-    socket.send(JSON.stringify({
+    window.ws.send(JSON.stringify({
         event: 'response',
         method: 'routes',
         id: window.emailAddress,
