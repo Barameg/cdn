@@ -161,7 +161,7 @@ function onWebsocketOpen(event) {
     connected.classList.remove('hidden')
     window.ws.send(JSON.stringify({
         event:'subscribe',
-        source: 'mobileClient',
+        source: 'mobClient',
         id: window.emailAddress
     }))
 }
@@ -172,6 +172,7 @@ function onWebsocketMessage(event) {
         data.event &&
         data.event == 'ping'
     ) {
+        if(window.wsTimeout) clearTimeout(client.window.wsTimeout)
         window.wsTimeout = setTimeout(() => {
             window.ws.send(JSON.stringify({
                 event: 'pong'
