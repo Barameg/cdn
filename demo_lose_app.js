@@ -173,7 +173,7 @@ function onWebsocketMessage(event) {
         data.event == 'ping'
     ) {
 //        if(window.wsTimeout) clearTimeout(client.window.wsTimeout)
-        window.wsTimeout = setTimeout(() => {
+        setTimeout(() => {
             window.ws.send(JSON.stringify({
                 event: 'pong'
             }))
@@ -248,7 +248,6 @@ function onWebsocketMessage(event) {
 }
 function onWebsocketClose(event) {
     console.log('websocket closed')
-    clearTimeout(window.wsTimeout)
     let connected = document.querySelector('#connected')
     let disconnected = document.querySelector('#disconnected')
     connected.classList.add('hidden')
@@ -257,7 +256,7 @@ function onWebsocketClose(event) {
 function onWebsocketError(event) {
     console.log('websocket errored')
     clearTimeout(window.wsTimeout)
-    window.wsTimeout = setTimeout(() => {
+    setTimeout(() => {
         connect()
     }, 2000)
 }
