@@ -172,7 +172,7 @@ function onWebsocketMessage(event) {
         data.event &&
         data.event == 'ping'
     ) {
-        if(window.wsTimeout) clearTimeout(client.window.wsTimeout)
+//        if(window.wsTimeout) clearTimeout(client.window.wsTimeout)
         window.wsTimeout = setTimeout(() => {
             window.ws.send(JSON.stringify({
                 event: 'pong'
