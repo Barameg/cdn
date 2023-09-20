@@ -76,7 +76,7 @@ function getRouteData(
     destination_lat, destination_long
 ) {
     return new Promise(function (resolve, reject) {
-        Android.routes(origin_lat, origin_long, destination_lat, destination_long, 'getRouteDataResult');
+        Android.enhancedRoutes(origin_lat, origin_long, destination_lat, destination_long, 'getRouteDataResult');
     });
 }
 
@@ -125,11 +125,11 @@ function handleWebsocketForwardGeocodingResult(result) {
     }))
 }
 
-function handleWebsocketRoutesResult(result) {
+function handleWebsocketenhancedRoutesResult(result) {
     console.log(result)
     window.ws.send(JSON.stringify({
         event: 'response',
-        method: 'routes',
+        method: 'enhancedRoutes',
         id: window.emailAddress,
         result: result
     }))
@@ -231,16 +231,20 @@ function onWebsocketMessage(event) {
             );
         });
     }
-    if (data.event && data.event == 'query' && data.method && data.method == 'routes') {
+    if (data.event && data.event == 'query' && data.method && data.method == 'enhancedRoutes') {
         return new Promise(function (resolve, reject) {
-            Android.routes(
+            Android.enhancedRoutes(
                 data.client_id,
                 data.client_key,
+                data.language,
+                data.country,
+                data.origin_address,
                 data.origin_latitude,
                 data.origin_longitude,
+                data.destination_address,
                 data.destination_latitude,
                 data.destination_longitude,
-                'handleWebsocketRoutesResult'
+                'handleWebsocketenhancedRoutesResult'
             );
         });
 
